@@ -1,0 +1,71 @@
+
+/* ========================================
+   LAYOUT SYSTEM
+   Ayu Suningsih Portfolio
+======================================== */
+
+/* Main Container */
+.container {
+    width: min(100% - 40px, var(--container-width));
+    margin-inline: auto;
+}
+
+/* Section Spacing */
+.section {
+    padding-block: 100px;
+}
+
+/* Section Header */
+.section-header {
+    margin-bottom: 48px;
+}
+
+/* Two Column Layout */
+.grid-two {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 48px;
+    align-items: center;
+}
+
+/* Three Column Layout */
+.grid-three {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+/* Four Column Layout */
+.grid-four {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* Responsive Layout */
+@media (max-width: 992px) {
+    .grid-three,
+    .grid-four {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: min(100% - 32px, var(--container-width));
+    }
+
+    .section {
+        padding-block: 64px;
+    }
+
+    .grid-two,
+    .grid-three,
+    .grid-four {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header {
+        margin-bottom: 32px;
+    }
+}

@@ -1,0 +1,751 @@
+
+/* ==========================================
+   FEATURED PROJECTS
+   Forest Green & Cream Theme
+========================================== */
+
+.projects-section {
+    padding: 110px 0;
+    background: #F8F6F0;
+}
+
+.projects-container {
+    width: min(1160px, 90%);
+    margin: 0 auto;
+}
+
+/* SECTION HEADING */
+
+.projects-heading {
+    max-width: 680px;
+    margin-bottom: 65px;
+}
+
+.projects-eyebrow {
+    display: inline-block;
+    margin-bottom: 15px;
+
+    color: #537467;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.projects-heading h2 {
+    margin: 0 0 18px;
+
+    color: #183F35;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.projects-heading p {
+    margin: 0;
+    color: #68766D;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* PROJECT LAYOUT */
+
+.project-showcase {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+/* VISUAL AREA */
+
+.project-visual {
+    min-width: 0;
+}
+
+.moneynest-showcase {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 430px;
+    padding: 35px 18px;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            #EAF2E8 0%,
+            #DDE9DF 65%,
+            #D4E3D7 100%
+        );
+
+    border: 1px solid #D1E0D4;
+    border-radius: 26px;
+    overflow: hidden;
+}
+
+/* PHONE MOCKUPS */
+
+.phone-mockup {
+    position: absolute;
+    width: 37%;
+    max-width: 190px;
+
+    overflow: hidden;
+    background: #FFFFFF;
+
+    border: 4px solid #243F38;
+    border-radius: 20px;
+
+    box-shadow:
+        0 16px 35px rgba(24, 63, 53, 0.18);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.phone-mockup img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* LEFT PHONE */
+
+.phone-left {
+    left: 8%;
+    z-index: 1;
+
+    transform:
+        translateY(18px)
+        rotate(-10deg);
+}
+
+/* CENTER PHONE */
+
+.phone-center {
+    left: 50%;
+    z-index: 3;
+
+    width: 41%;
+    max-width: 205px;
+
+    transform:
+        translateX(-50%)
+        translateY(-5px);
+}
+
+/* RIGHT PHONE */
+
+.phone-right {
+    right: 8%;
+    z-index: 2;
+
+    transform:
+        translateY(18px)
+        rotate(10deg);
+}
+
+/* HOVER EFFECT */
+
+.phone-left:hover {
+    z-index: 5;
+
+    transform:
+        translateY(-12px)
+        rotate(-5deg)
+        scale(1.04);
+}
+
+.phone-center:hover {
+    z-index: 5;
+
+    transform:
+        translateX(-50%)
+        translateY(-18px)
+        scale(1.04);
+}
+
+.phone-right:hover {
+    z-index: 5;
+
+    transform:
+        translateY(-12px)
+        rotate(5deg)
+        scale(1.04);
+}
+
+/* PROJECT CONTENT */
+
+.project-content {
+    min-width: 0;
+}
+
+.project-number {
+    display: inline-block;
+    margin-bottom: 18px;
+
+    color: #537467;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.project-content h3 {
+    margin: 0 0 8px;
+
+    color: #183F35;
+    font-size: clamp(30px, 3.5vw, 44px);
+    font-weight: 700;
+}
+
+.project-subtitle {
+    margin: 0 0 24px;
+
+    color: #537467;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.project-description {
+    margin: 0 0 28px;
+
+    color: #59685F;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* TECH STACK */
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+
+    margin-bottom: 32px;
+}
+
+.project-tech span {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 9px 13px;
+
+    background: #E4ECE4;
+    border: 1px solid #D3E0D5;
+    border-radius: 50px;
+
+    color: #244F3D;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* GITHUB LINK */
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding: 14px 20px;
+
+    background: #183F35;
+    border: 1px solid #183F35;
+    border-radius: 10px;
+
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.project-link:hover {
+    background: #2B5948;
+    transform: translateY(-3px);
+    color: #FFFFFF;
+}
+
+.project-link span:last-child {
+    font-size: 20px;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+    .project-showcase {
+        gap: 35px;
+    }
+
+    .moneynest-showcase {
+        min-height: 350px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 75px 0;
+    }
+
+    .projects-heading {
+        margin-bottom: 40px;
+    }
+
+    .project-showcase {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .moneynest-showcase {
+        min-height: 390px;
+    }
+
+    .project-content h3 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 480px) {
+    .moneynest-showcase {
+        min-height: 310px;
+        padding: 20px 10px;
+    }
+
+    .phone-mockup {
+        border-width: 3px;
+        border-radius: 13px;
+    }
+
+    .phone-left {
+        left: 6%;
+    }
+
+    .phone-right {
+        right: 6%;
+    }
+
+    .project-description {
+        font-size: 14px;
+    }
+
+    .project-tech span {
+        font-size: 11px;
+        padding: 8px 11px;
+    }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+    .phone-mockup,
+    .project-link {
+        transition: none;
+    }
+}
+
+
+/* ==========================================
+   PROJECT 02 — LEAFAI
+========================================== */
+
+/* SPACE BETWEEN PROJECTS */
+
+.project-showcase + .project-showcase {
+    margin-top: 110px;
+}
+
+/* LEAFAI VISUAL */
+
+.leafai-showcase {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 430px;
+    padding: 30px 20px;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            #EAF3E4 0%,
+            #DCE9D7 65%,
+            #D0E1CB 100%
+        );
+
+    border: 1px solid #D1E0D4;
+    border-radius: 26px;
+    overflow: hidden;
+}
+
+/* LEAFAI PHONE BASE */
+
+.leafai-phone {
+    position: absolute;
+    overflow: hidden;
+
+    background: #FFFFFF;
+    border: 4px solid #243F38;
+    border-radius: 20px;
+
+    box-shadow:
+        0 16px 35px rgba(24, 63, 53, 0.18);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.leafai-phone img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* BACK PHONE — RESULT */
+
+.leafai-phone-back {
+    width: 38%;
+    max-width: 190px;
+
+    right: 12%;
+    z-index: 1;
+
+    transform:
+        translateX(10px)
+        translateY(18px)
+        rotate(9deg);
+}
+
+/* FRONT PHONE — REAL-TIME DETECTION */
+
+.leafai-phone-front {
+    width: 43%;
+    max-width: 210px;
+
+    left: 20%;
+    z-index: 2;
+
+    transform:
+        translateY(-8px)
+        rotate(-5deg);
+}
+
+/* HOVER ANIMATION */
+
+.leafai-phone-back:hover {
+    z-index: 4;
+
+    transform:
+        translateX(10px)
+        translateY(-10px)
+        rotate(4deg)
+        scale(1.04);
+}
+
+.leafai-phone-front:hover {
+    z-index: 4;
+
+    transform:
+        translateY(-20px)
+        rotate(-2deg)
+        scale(1.04);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+    .leafai-showcase {
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-showcase + .project-showcase {
+        margin-top: 75px;
+    }
+
+    .leafai-showcase {
+        min-height: 390px;
+    }
+
+    /* Keep image above text on mobile */
+    .project-reverse .project-visual {
+        grid-row: 1;
+    }
+
+    .project-reverse .project-content {
+        grid-row: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .leafai-showcase {
+        min-height: 310px;
+    }
+
+    .leafai-phone {
+        border-width: 3px;
+        border-radius: 13px;
+    }
+
+    .leafai-phone-front {
+        left: 17%;
+    }
+
+    .leafai-phone-back {
+        right: 10%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .leafai-phone {
+        transition: none;
+    }
+}
+
+
+/* ==========================================
+   PROJECT 03 — WEBSITE DESA
+========================================== */
+
+.webdesa-showcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 380px;
+    padding: 35px 24px;
+
+    background: linear-gradient(
+        135deg,
+        #E8EFE6,
+        #D4E3D7
+    );
+
+    border: 1px solid #D1E0D4;
+    border-radius: 26px;
+}
+
+/* Browser Mockup */
+
+.webdesa-browser {
+    width: 100%;
+    overflow: hidden;
+
+    background: #FFFFFF;
+    border: 1px solid #CAD8CD;
+    border-radius: 14px;
+
+    box-shadow:
+        0 20px 45px rgba(24, 63, 53, 0.15);
+
+    transition: transform 0.3s ease;
+}
+
+.webdesa-browser:hover {
+    transform: translateY(-6px);
+}
+
+/* Browser Header */
+
+.webdesa-browser-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 12px 15px;
+    background: #F3F5F0;
+    border-bottom: 1px solid #E0E7DE;
+}
+
+.webdesa-browser-dots {
+    display: flex;
+    gap: 5px;
+}
+
+.webdesa-browser-dots span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+.webdesa-browser-dots span:nth-child(1) {
+    background: #D89A91;
+}
+
+.webdesa-browser-dots span:nth-child(2) {
+    background: #E3C783;
+}
+
+.webdesa-browser-dots span:nth-child(3) {
+    background: #8BB69A;
+}
+
+/* Address Bar */
+
+.webdesa-address {
+    flex: 1;
+    min-width: 0;
+    padding: 7px 12px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    background: #FFFFFF;
+    border: 1px solid #E0E7DE;
+    border-radius: 7px;
+
+    color: #537467;
+    font-size: 11px;
+    text-align: center;
+}
+
+/* Website Screenshot */
+
+.webdesa-browser-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.webdesa-browser-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .webdesa-showcase {
+        min-height: auto;
+        padding: 24px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .webdesa-showcase {
+        padding: 16px 10px;
+        border-radius: 18px;
+    }
+
+    .webdesa-browser-header {
+        gap: 8px;
+        padding: 9px;
+    }
+
+    .webdesa-address {
+        font-size: 9px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .webdesa-browser {
+        transition: none;
+    }
+}
+
+
+/* ==========================================
+   FINAL POLISH — FEATURED PROJECTS
+========================================== */
+
+/* Section heading divider */
+.projects-heading::after {
+    content: "";
+    display: block;
+    width: 58px;
+    height: 3px;
+    margin-top: 24px;
+    border-radius: 10px;
+    background: #537467;
+}
+
+/* Project separation */
+.project-showcase + .project-showcase {
+    padding-top: 75px;
+    border-top: 1px solid #DFE6DB;
+}
+
+/* Smooth focus for project links */
+.project-link:focus-visible {
+    outline: 3px solid #79A98C;
+    outline-offset: 4px;
+}
+
+/* Reveal animation only when JavaScript is active */
+.projects-section.projects-motion-ready .project-showcase {
+    opacity: 0;
+    transform: translateY(35px);
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.projects-section.projects-motion-ready
+.project-showcase.project-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Better spacing on mobile */
+@media (max-width: 768px) {
+    .project-showcase + .project-showcase {
+        padding-top: 50px;
+    }
+
+    .project-content {
+        text-align: left;
+    }
+
+    .project-tech {
+        gap: 8px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .projects-section.projects-motion-ready
+    .project-showcase {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+
+/* WEBSITE DESA — SCREENSHOT CLEANUP */
+
+.webdesa-browser-image {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    position: relative;
+}
+
+.webdesa-browser-image img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+    top: -6.8%;
+    left: 0;
+}
+
+/* The screenshot remains readable on smaller screens */
+@media (max-width: 480px) {
+    .webdesa-browser-image {
+        aspect-ratio: 16 / 10;
+    }
+}
